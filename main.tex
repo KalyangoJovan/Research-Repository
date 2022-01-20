@@ -142,13 +142,13 @@ Make a function to compute the t-test with the aforementioned formulas and which
 
 \section{Introduction}
 A t test is a type of statistical test that is used to compare the means of two groups. It is one of the most widely used statistical hypothesis tests in range of studies\cite{davison2002introduction}. There are two types of statistical inference: parametric and nonparametric methods. Parametric methods refer to a statistical technique in which one defines the probability distribution of probability variables and makes inferences about the parameters of the distribution\cite{pmid28898401}.In cases in which the probability distribution cannot be defined, nonparametric methods are employed. T tests are a type of parametric method; they can be used when the samples satisfy the conditions of normality, equal variance, and independence.
-T tests can be divided into two types. There is the independent t test, which can be used when the two groups under comparison are independent of each other, and the paired t test, which can be used when the two groups under comparison are dependent on each other. T tests are usually used in cases where the experimental subjects are divided into two independent groups, with one group treated with A and the other group treated with B. Researchers can acquire two types of results for each group (i.e., CSFI and TFI). An independent t test can be used for an intergroup comparison between two groups.Sample size and power calculations are an important part of designing new sequence-based association studies.
+T tests can be divided into two types. There is the independent t test, which can be used when the two groups under comparison are independent of each other, and the paired t test, which can be used when the two groups under comparison are dependent on each other\cite{berger2006gentle}. T tests are usually used in cases where the experimental subjects are divided into two independent groups, with one group treated with A and the other group treated with B. Researchers can acquire two types of results for each group (i.e., CSFI and TFI). An independent t test can be used for an intergroup comparison between two groups.Sample size and power calculations are an important part of designing new sequence-based association studies\cite{davison2002introduction}.
 
 Resampling methods have become practical with the general availability of cheap rapid
 computing and new software Compared to standard methods of statistical inference, these
 modern methods often are simpler and more accurate, require fewer assumptions, and have
-greater generalizability. Resampling provides especially clear advantages when assumptions of
-traditional parametric tests are not met, as with small samples from non-normal distributions.
+greater generalizability\cite{pmid28898401} and \cite{mooney1993bootstrapping}. Resampling provides especially clear advantages when assumptions of
+traditional parametric tests are not met, as with small samples from non-normal distributions\cite{pmid26634076}.
 Additionally, resampling can address questions that cannot be answered with traditional
 parametric or nonparametric methods, such as comparisons of medians or ratios. The resampling
 methods for testing means, medians, ratios, or other parameters are the same, so we do not need
@@ -156,12 +156,11 @@ new methods for these different applications. Thus, resampling also has advantag
 conceptual simplicity.
 Parametric tests can be criticized because they require restrictive assumptions, tests may be
 difficult to interpret, and no tests are readily available for some interesting statistics. More
-importantly, parametric tests can fail to detect important effects or give misleading results under
-some conditions. For example, adding a relatively extreme observation can reduce the sensitivity
+importantly, parametric tests can fail to detect important effects or give misleading results under some conditions\cite{pmid26831402}. For example, adding a relatively extreme observation can reduce the sensitivity
 of a parametric test, even if the observation is in the direction of observed effects. 
 Three resampling methods that are commonly used for different purposes:
 Permutation methods use sampling without replacement to test hypotheses of no effect‟;
-Bootstrap methods use sampling with replacement to establish confidence intervals;
+Bootstrap methods use sampling with replacement to establish confidence intervals\cite{cirincione1997research} and \cite{zhang2010estimating};
 Monte Carlo methods use repeated sampling from populations with known characteristics to
 determine how sensitive statistical procedures are to those characteristics.
 
@@ -192,6 +191,7 @@ If power is seen as the percentage of simulations that find a significant result
 
 
 \section{Discussion}
+The estimate shows that the true mean difference of population with 0.95 certainty.The more bootstrap samples used, the smaller the bias will get. N = 1000, as used in our example, is quite high and therefore, the estimation has quite low bias. The computed standard error of the sampling distribution tells something about how spread the data is. The higher the number of bootstrap samples, 2 standard errors below and above the mean will be the same as obtained values of the 0.95-percentile confidence interval. 
 
 
 
@@ -200,12 +200,7 @@ The documentation of this project, including the R code and instructions to repr
 is available in the research repository at https://github.com/KalyangoJovan/Research-Repository.
 
 
-
- 
-\section{Referenses} 
 \printbibliography
-
-
 
 
 
